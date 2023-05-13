@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/server.ts",
-    "start": "node dit/server.js"
+    "start": "node dit/server.js",
+    "build": "tsc"
   },
   "dependencies": {
     "cors": "^2.8.5",
