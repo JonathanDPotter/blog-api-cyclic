@@ -7,8 +7,9 @@
   "scripts": {
     "dev": "nodemon src/server.ts",
     "start": "node dist/server.js",
-    "build": "yarn clean && tsc && yarn copy-files",
+    "build": "yarn clean && tsc && yarn copy",
     "clean": "rimraf dist/",
+    "copy": "cp -r src/static dist",
     "copy-files": "copyfiles src/**/*.html src/**/*.css src/**/*.svg src/**/*.ico src/**/*.js dist/"
   },
   "dependencies": {
