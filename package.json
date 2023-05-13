@@ -9,7 +9,7 @@
     "start": "node dist/server.js",
     "build": "yarn clean && tsc && yarn copy-files",
     "clean": "rimraf dist/",
-    "copy-files": "copyfiles -u src/**/*.html src/**/*.css src/**/*.svg src/**/*.ico src/**/*.js dist/"
+    "copy-files": "copyfiles src/**/*.html src/**/*.css src/**/*.svg src/**/*.ico src/**/*.js dist/"
   },
   "dependencies": {
     "cors": "^2.8.5",
