@@ -11,11 +11,7 @@ const { env } = config.server;
 const createServer = () => {
   const server = express();
 
-  server.use(
-    express.static(
-      path.join(__dirname, `../${env === "development" ? "" : "src/"}static`)
-    )
-  );
+  server.use(express.static(path.join(__dirname, `../static`)));
   server.use(express.json());
   server.use(cors({ origin: "*" }));
   server.use(morgan("dev"));
