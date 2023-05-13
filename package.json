@@ -1,11 +1,12 @@
 {
   "name": "blog-api-cyclic",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "author": "Jonathan <jonathan.d.potter@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.ts"
+    "dev": "nodemon src/server.ts",
+    "start": "node dit/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
